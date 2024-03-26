@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AVI Of Anime</title>
+        <style>
+            body{
+                background-color: burlywood;
+            }
+            h1{
+                text-align: center;
+                font-size: 250%;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            p{
+                font-family: Sedgwick Ave;
+            }
+            * {
+              box-sizing: border-box;
+            }
+            
+            .column {
+              float: left;
+              width: 33.33%;
+              padding: 5px;
+            }
+            .row::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+            </style>
+    </head>
+
+    <body>
+      <button onclick="window.location.href = 'index.html' "> Go Back </button>
+        <h1>Anime: Frieren Beyond Journey's End</h1>
+        <p title="Frieren Beyond Journey's End">A video clip of the anime is shown below.</p>
+        <video width="50%" height="60%" controls muted>
+            <source src="frieren (1).mkv">
+        </video><br><br>
+        <h1>Anime: Naruto</h1>
+        <p title="Naruto">An audio clip of Madara Uchiha the anime is given below.</p>
+        <audio controls>
+            <source src="Wake up to reality.mp3">
+        </audio><br><br>
+        <div class="row">
+            <div class="column">
+                <b>Dr.Stone</b>
+              <img src="DS.jpg" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+                <b>One Piece</b>
+              <img src="OP.jpg" alt="Forest" style="width:100%" >
+            </div>
+            <div class="column">
+                <b>Haikyuu</b>
+              <img src="haikyuu.jpg" alt="Mountains" style="width:100%">
+            </div>
+          </div>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anime Feedback</title>
+        <link rel="icon" href="anime.jpg">
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function myFunction(){
+                document.getElementById("submit").innerHTML = "Your response has submitted."
+            }
+        </script>
+    </head>
+
+    <body id="submit">
+        <button onclick="window.location.href = 'index.html' "> Go Back </button>
+        <h1>Fill out the form</h1><br><br><br>
+        <form>
+            <label for="fname" >Firstname:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Lastname:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="genre">Select your favorite anime genre form the below:</label>
+            <select id="genre" name="genre" multiple>
+                <option value="Adventure">Adventure</option>
+                <option value="action">Action</option>
+                <option value="fantasy">Fantasy</option>
+                <option  value="Sci-fi">Sci-fi</option>
+                <option value="Horror">Horror</option>
+                <option value="None">None</option>
+            </select>
+        </form>
+        <p>Please tell your favorite anime, a few words about it.</p>
+        <form>
+            <textarea name="msg" rows="10" cols="30"></textarea>
+        </form>
+        <p>Please give us your rating for Steins;Gate, if you have seen it otherwise 1.</p>
+        <form>
+            <input type="radio" id="five" name="rating" value="5">
+            <label for="five">5</label><br>
+            <input type="radio" id="four" name="rating" value="4">
+            <label for="four">4</label><br>
+            <input type="radio" id="three" name="rating" value="3">
+            <label for="three">3</label><br>
+            <input type="radio" id="two" name="rating" value="2">
+            <label for="two">2</label><br>
+            <input type="radio" id="one" name="rating" value="1">
+            <label for="one">1</label><br>
+            </form>
+        <p>Upload your fan anime art.</p>
+        <form>
+            <label for="image">Select a file:</label>
+            <input type="file" id="image" name="image"><br><br>
+            <button type="button" onclick="myFunction()">Submit</button>
+        </form>
+        
+    </body>
+</html>
